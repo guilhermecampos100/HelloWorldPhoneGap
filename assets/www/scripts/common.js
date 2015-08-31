@@ -50,20 +50,24 @@ function onDeviceReady() {
     
     // set to true
     isPhoneGapReady = true;
+	alert('debug 1');
     
     deviceUUID = device.uuid;
+	
+	alert('debug 2' + deviceUUID);	
     
     // detect the device's platform
     deviceDetection();
-    
+    alert('debug 3');
     // detect for network access
     networkDetection();
-    
+    alert('debug 4');
     // execute any events at start up
     executeEvents();
-    
+    alert('debug 5');
     // execute a callback function
     executeCallback();
+	alert('debug 6');
 }
 
 function executeEvents() {
